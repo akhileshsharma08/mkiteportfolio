@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Dancing+Script&family=Oswald:wght@200&family=Satisfy&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  
+  
+  .mynametext{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      /* font-family: 'Audiowide', cursive; */
+
+  }
+  .fullname ,.navtitle{
+    font-family: 'Audiowide', cursive;
+  }
+  .lastname{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px; 
+
+  }
+  .firstname:hover{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px; 
+      
+
+  }
+  .slide-out{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      transform-origin: top;
+  }
+  .globe{
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      /* place-items: center; */
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      cursor: grabbing;
+      background-color: cadetblue;
+      object-fit: cover;
+      overflow: hidden;
+  }
+  .titles{
+    font-family: 'Satisfy', cursive;
+  }
+  .contactHeading{
+    font-family: 'Oswald', sans-serif;
+
+  }
+
+  .circle{
+    background-image: url('./img/circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rotation 2s infinite linear;
+    /* position: relative;
+     */
+
+     offset-rotate: auto;
+  }
+  
+
+  .contactfield{
+    background-image: url('./img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
