@@ -29,7 +29,7 @@ const Navbar = () => {
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg> */}
               <span
-                className={`md:visible hidden navtitle ml-3 md:text-2xl text-lg text-white hover:text-green-500`}
+                className={`md:visible invisible navtitle ml-3 md:text-2xl text-lg text-white hover:text-green-500`}
               >
                 {name} @ Monsterbrains
               </span>
