@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const List = () => {
   const { empData } = ContextData();
   return (
-    <div className="bg-slate-600 text-white  flex justify-center items-center flex-wrap py-8">
+    <div className="bg-slate-600 text-white  flex justify-center items-center flex-wrap pt-16 pb-8">
       {empData.map((ele) => (
           <div className="w-1/3 ">
             <Link to={`https://mkite.vercel.app/${ele.firstName}`} key={ele.id}>
