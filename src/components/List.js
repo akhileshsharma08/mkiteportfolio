@@ -6,7 +6,7 @@ import Logo from '../img/Logo.png'
 const List = () => {
   const { empData } = ContextData();
   return (
-    <div className="maindiv bg-slate-600 text-white flex justify-center items-center">
+    <div className="maindiv bg-slate-600 text-white flex justify-center items-center flex-col ">
       <div className="mainlogo py-20">
         <img src={Logo} alt="monsterbrains logo" width={300} height={100} />
       </div>
