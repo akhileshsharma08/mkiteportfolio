@@ -4,7 +4,7 @@ import { defaultSkills } from "./Techicons";
 
 const Skills = () => {
   const [mycategory, setMyCategory] = useState("");
-  console.log(mycategory, "cate");
+  // console.log(mycategory, "cate");
   const [techskill, setTechskill] = useState([]);
 
   useEffect(() => {
