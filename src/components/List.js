@@ -23,7 +23,7 @@ const List = () => {
                 <QRCode
               size={20}
               style={{ height: "50%", maxWidth: "50%", width: "50%" }}
-              value={`https://mkite.vercel.app/${ele.firstName}`}
+              value={`http://monsterbrains.in/${ele.firstName}`}
               viewBox={`0 0 256 256`}
             />
             </div>
