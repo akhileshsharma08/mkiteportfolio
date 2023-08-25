@@ -9,10 +9,9 @@ const Skills = () => {
 
   useEffect(() => {
     const updatedSkill = TechIcons.filter((item) => {
-      return item.category == `${mycategory}`;
+      return item.category === `${mycategory}`;
     });
     setTechskill(updatedSkill);
-    console.log(techskill, "techskill");
   }, [mycategory]);
 
 
