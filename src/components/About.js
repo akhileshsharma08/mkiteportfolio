@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import TechndWork from "./TechndWork";
-import { motion } from "framer-motion";
 import { ContextData } from "../context/Context";
 
 const About = () => {

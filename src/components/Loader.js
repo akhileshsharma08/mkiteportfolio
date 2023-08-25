@@ -2,13 +2,12 @@
 import React, {  useState } from "react";
 import { motion} from "framer-motion";
 
-import skull from "../img/skull.gif";
 import { Typewriter } from "react-simple-typewriter";
 // import { ContextData } from "../context/Context";
 import { useParams } from "react-router-dom";
 
 const Loader = () => {
-  const [Loading, setLoading] = useState(true);
+  const [ setLoading] = useState(true);
   // const{sortedData} = ContextData()
   const {name} = useParams()
   return (

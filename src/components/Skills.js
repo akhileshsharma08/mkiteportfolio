@@ -15,30 +15,8 @@ const Skills = () => {
     console.log(techskill, "techskill");
   }, [mycategory]);
 
-  const Mydefaultskills = () => {
-    return (
-      <div>
-        {defaultSkills.map((item) => (
-          <div>
-            {" "}
-            <img src={item.imgUrl} alt={item.name} width={70} height={70} />
-          </div>
-        ))}
-      </div>
-    );
-  };
-  const Mytechskills = () => {
-    return ( 
-      <div>
-        {techskill.map((item) => (
-          <div>
-            {" "}
-            <img src={item.imgUrl} alt={item.name} width={70} height={70} />
-          </div>
-        ))}
-      </div>
-    );
-  };
+
+
 
   return (
     <div className="bg-slate-900  py-16">

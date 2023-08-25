@@ -4,18 +4,18 @@ import Logo from '../img/Logo.svg'
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-    const icon = {
-        hidden: {
-          opacity: 0,
-          pathLength: 0,
-          fill: "rgba(220, 255, 136, 0)"
-        },
-        visible: {
-          opacity: 1,
-          pathLength: 1,
-          fill: "rgba(0, 255, 0, 1)"
-        }
-      };
+    // const icon = {
+    //     hidden: {
+    //       opacity: 0,
+    //       pathLength: 0,
+    //       fill: "rgba(220, 255, 136, 0)"
+    //     },
+    //     visible: {
+    //       opacity: 1,
+    //       pathLength: 1,
+    //       fill: "rgba(0, 255, 0, 1)"
+    //     }
+    //   };
       return (
         <>
           <footer className="text-white body-font bg-slate-900 border-green-500  border-t-2 py-4">
