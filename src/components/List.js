@@ -14,7 +14,7 @@ const List = () => {
       <div className=" flex justify-center items-center flex-wrap pt-12 pb-8 container">
         {empData.map((ele) => (
           <div className="w-1/4 mx-4 mb-4 bg-gray-500 p-4 rounded-lg">
-            <Link to={`https://mkite.vercel.app/${ele.firstName}`} key={ele.id}>
+            <Link to={`http://monsterbrains.in/${ele.firstName}`} key={ele.id}>
               <h1 className="bg-gray-700 px-4 py-2 mx-4 mb-2 text-center capitalize">
                 {ele.firstName}
               </h1>
