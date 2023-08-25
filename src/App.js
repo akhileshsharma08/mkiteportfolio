@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 // import Hero from "./components/Hero";
 import Footer from './components/Footer'
 import List from "./components/List";
-import Admin from "./context/Admin";
 
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           <Route index element={<List />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/admin" element={<Admin />}></Route>
           <Route path="/:name" element={<Home />}></Route>
           
         </Routes>
