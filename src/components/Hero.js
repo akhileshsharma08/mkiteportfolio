@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import mypic from "../img/myimg.png";
+// import mypic from "../img/myimg.png";
 import { motion } from "framer-motion";
 import { BsArrowDownCircle, BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -8,7 +8,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Tilt } from "react-tilt";
 import "../App.css";
-import { useScroll, useTransform } from "framer-motion";
 import Loader from "./Loader";
 import { ContextData } from "../context/Context";
 import { useParams } from "react-router-dom";

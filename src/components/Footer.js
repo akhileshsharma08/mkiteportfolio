@@ -1,7 +1,6 @@
 
 import React from "react";
 import Logo from '../img/Logo.svg'
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

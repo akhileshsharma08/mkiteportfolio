@@ -6,7 +6,7 @@ import { ContextData } from '../context/Context';
 import About from './About';
 
 const Home = () => {
-  const { setSortedData, empData, loading, setLoading } = ContextData();
+  const { setSortedData, empData,  setLoading } = ContextData();
   const { name } = useParams();
 
   useEffect(() => {

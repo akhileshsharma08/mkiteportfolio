@@ -1,19 +1,6 @@
 import React from "react";
-import { BsArrowRight ,  BsArrowDownCircle,
-  BsLinkedin,
-  BsGithub,} from "react-icons/bs";
-  import {MdEmail} from 'react-icons/md'
+import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-// import { Oswald, Satisfy } from "next/font/google";
-
-// const satisfy = Satisfy({
-//   subsets: ["latin"],
-//   weight: "400",
-// });
-// const oswald = Oswald({
-//   subsets: ["latin"],
-//   weight: "400",
-// });
 
 const Contact = () => {
     return (

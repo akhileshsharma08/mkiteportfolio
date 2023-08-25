@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Satisfy } from "next/font/google";
 import TechndWork from "./TechndWork";
 import { motion } from "framer-motion";
 import { ContextData } from "../context/Context";

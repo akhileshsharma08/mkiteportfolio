@@ -6,13 +6,10 @@ import { TbCertificate2 } from "react-icons/tb";
 import { MdOutlineContacts } from "react-icons/md";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-// import { ContextData } from "../context/Context";
 import '../App.css'
-import { ContextData } from "../context/Context";
 import { useParams } from "react-router-dom";
 
 const Navbar = () => {
-  const {sortedData}= ContextData()
   const {name} = useParams()
     return (
         <header className="text-white body-font bg-slate-950 fixed w-full top-0 z-10  ">

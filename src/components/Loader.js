@@ -1,16 +1,15 @@
 "use client";
-import React, { useContext, useState } from "react";
-import { motion, AnimatePresence, easeIn } from "framer-motion";
+import React, {  useState } from "react";
+import { motion} from "framer-motion";
 
 import skull from "../img/skull.gif";
 import { Typewriter } from "react-simple-typewriter";
-import { ContextData } from "../context/Context";
+// import { ContextData } from "../context/Context";
 import { useParams } from "react-router-dom";
 
 const Loader = () => {
-// const {myname} = ContextData()
   const [Loading, setLoading] = useState(true);
-  const{sortedData} = ContextData()
+  // const{sortedData} = ContextData()
   const {name} = useParams()
   return (
     <motion.div
