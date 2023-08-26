@@ -3,9 +3,12 @@ import { ContextData } from "../context/Context";
 import { Link } from "react-router-dom";
 import Logo from "../img/Logo.png";
 import QRCode from "react-qr-code";
+// import { QRCode } from 'react-qrcode-logo';
+
 
 const List = () => {
   const { empData } = ContextData();
+  console.log(empData,"empdata")
   return (
     <div className="maindiv bg-slate-600 text-white flex justify-center items-center flex-col ">
       <div className="mainlogo pt-20">
@@ -19,12 +22,21 @@ const List = () => {
                 {ele.firstName}
               </h1>
             </Link>
-            <div className="qrbox  flex justify-center items-center">
+            <div className="qrbox  flex justify-center items-center flex-col ">
                 <QRCode
-              size={20}
+                className=""
+              size={150}
               style={{ height: "50%", maxWidth: "50%", width: "50%" }}
               value={`http://monsterbrains.in/${ele.firstName}`}
               viewBox={`0 0 256 256`}
+              // logoImage={`${ele.avatar}`}
+              // logoPaddingStyle="circle"
+              // logoHeight={40}
+              // logoWidth={40}
+              // fgColor="#22c55e"
+              // bgColor="#374151"
+
+              // eyeRadius={4}
             />
             </div>
           
