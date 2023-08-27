@@ -29,6 +29,9 @@ const List = () => {
           style={{ height: "50%", maxWidth: "50%", width: "50%" }}
           value={`http://monsterbrains.in/${ele.firstName}`}
           viewBox="0 0 256 256"
+          
+          
+          
         />
       </div>
     </div>

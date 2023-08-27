@@ -19,7 +19,7 @@ function App() {
           <Route index element={<List />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/:name" element={<Home />}></Route>
+          <Route path="/:name" exact element={<Home />}></Route>
           
         </Routes>
         <Footer />

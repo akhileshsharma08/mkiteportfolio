@@ -8,6 +8,8 @@ import Contact from './Contact';
 const Home = () => {
   const { setSortedData, empData, setLoading } = ContextData();
   const { name } = useParams();
+  console.log(name, "name Item");
+
 
   useEffect(() => {
     setLoading(true);

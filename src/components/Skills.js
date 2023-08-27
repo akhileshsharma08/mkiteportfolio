@@ -61,13 +61,14 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="600"
-          className="md:w-1/2 w-full bg-gray-800 py-5 rounded"
+          className="md:w-1/2 w-full py-5 rounded"
         >
-          <div className="skillbox flex justify-center items-center flex-wrap">
+          <div className="skillbox flex  justify-center items-center flex-wrap">
             {(techskill.length === 0 ? defaultSkills : techskill).map((ele) => (
               <div className="box mx-2" key={ele.id}>
-                <div className="flex mb-2">
-                  <img src={ele.imgUrl} alt={ele.name} width={70} height={70} />
+                <div data-aos="fade-up"
+          data-aos-delay="600" className="flex mb-2  h-16 w-16 rounded-full bg-white overflow-hidden p-2">
+                  <img src={ele.imgUrl} alt={ele.name} width={100} height={100} />
                 </div>
               </div>
             ))}
