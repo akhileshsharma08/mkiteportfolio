@@ -1,4 +1,4 @@
-"use client";
+
 import React, {  useState } from "react";
 import { motion} from "framer-motion";
 
@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { useParams } from "react-router-dom";
 
 const Loader = () => {
-  const [ setLoading] = useState(true);
+  const [ loading,setLoading] = useState(true);
   // const{sortedData} = ContextData()
   const {name} = useParams()
   return (
