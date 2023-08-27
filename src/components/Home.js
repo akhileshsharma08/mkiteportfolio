@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import Contact from './Contact';
-import Hero from './Hero';
 import { useParams } from 'react-router-dom';
 import { ContextData } from '../context/Context';
+import Hero from './Hero';
 import About from './About';
+import Contact from './Contact';
 
 const Home = () => {
-  const { setSortedData, empData,  setLoading } = ContextData();
+  const { setSortedData, empData, setLoading } = ContextData();
   const { name } = useParams();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-   <About/>
+      <About />
       <Contact />
     </>
   );
