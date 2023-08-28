@@ -25,18 +25,20 @@ console.log(filteredTeam,"yes")
 
   return (
     <div>
-      <h1 className="titles text-gray-700 font-bold  text-6xl text-center mt-6 mb-4">
+      <h1  data-aos="fade-up"
+          data-aos-delay="600" className="titles text-gray-700 font-bold  text-6xl text-center mt-6 mb-4">
         Other Team Members
       </h1>
       {/* <h1 className='text-white text-3xl '>Visit others also</h1> */}
       <div className="teamcontainer container">
         <div className="flex justify-center items-center flex-wrap pt-12 pb-8 container">
           {filteredTeam.map((ele) => (
-            <div
+            <div data-aos="fade-up"
+            data-aos-delay="700"
               className="w-1/4 mx-4 mb-4 bg-gray-800 p-4 rounded-lg hover:border hover:border-spacing-2 border-green-500 "
               key={ele.id}
             >
-              <Link to={`http://monsterbrains.in/${ele.firstName}`}>
+              <Link   to={`http://monsterbrains.in/${ele.firstName}`}>
                 <div className="box flex justify-between items-center">
                   <div className="imgbox flex justify-center items-center flex-col">
                     <img
