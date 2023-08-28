@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Logo from "../img/Logo.png";
 import QRCode from "react-qr-code";
 // import { QRCode } from 'react-qrcode-logo';
+import {QRCodeSVG} from 'qrcode.react';
+import {QRCodeCanvas} from 'qrcode.react';
 
 
 const List = () => {
@@ -22,17 +24,33 @@ const List = () => {
           {ele.firstName}
         </h1>
       </Link>
-      <div className="qrbox flex justify-center items-center flex-col">
-        <QRCode
+      <div className="qrbox flex justify-center items-center flex-col ">
+        <div className="h-40 w-40 rounded-full flex justify-center items-center flex-col bg-white p-2">
+           <QRCodeSVG
           className=""
-          size={150}
-          style={{ height: "50%", maxWidth: "50%", width: "50%" }}
+          // size={200}
+          // style={{ height: "70%", maxWidth: "70%", width: "70%" }}
           value={`http://monsterbrains.in/${ele.firstName}`}
-          viewBox="0 0 256 256"
-          
+          // viewBox="0 0 256 256"
+          size={128}
+          bgColor={"#ffffff"}
+          fgColor={"#000000"}
+          level={"L"}
+          includeMargin={false}
+          imageSettings={{
+            src: `http://monsterbrains.in/${ele.avatar}`,
+            x: undefined,
+            y: undefined,
+            height: 24,
+            width: 24,
+            excavate: true,
+          }}
           
           
         />
+        </div>
+        <p>scan to visit profile</p>
+       
       </div>
     </div>
   ))}

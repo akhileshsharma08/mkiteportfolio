@@ -1,6 +1,7 @@
 import React from "react";
 import TechndWork from "./TechndWork";
 import { ContextData } from "../context/Context";
+import { Teams } from "./Teams";
 
 const About = () => {
   const { sortedData } = ContextData();
@@ -66,6 +67,7 @@ const About = () => {
             </div>
           </div>
           <TechndWork />
+          <Teams/>
         </div>
       </div>
     </>
